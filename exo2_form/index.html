@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulaire pour ecole de programmation</title>
+</head>
+<body>
+
+    <form action="" method="post" class="form">
+         <label for="Post-lastname">Nom</label>
+         <input  id="Post-lastname" type="text" name="lastname" placeholder="votre nom" required>
+         <label for="Post-name">Prenom</label>
+         <input id="Post-name" type="text" name="name" placeholder="votre prenom"required>
+         <label for="email">e-mail</label>
+         <input id="email" type="email" name="email" placeholder="votre e-mail">
+         <label for="langage">Choisisez un langage de programmation</label>
+         <select name="langage" id="langage">
+            <option value="">--Choisisez votre langage--</option>
+            <option value="php">php</option>
+            <option value="python">python</option>
+            <option value="java">java</option>
+            <option value="raspberry">raspberry</option>
+         </select>
+         <label for="commentaire">Laissez nous un commentaire</label>
+         <textarea name="commentaire" id="commentaire" rows="5" required></textarea>
+         <input class="button" type="submit" value="Envoyer">
+    </form>
+    
+</body>
+</html>

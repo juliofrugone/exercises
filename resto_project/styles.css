@@ -1,0 +1,48 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.menu {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 1px;
+    border: 2px solid red;
+    overflow: scroll;
+}
+
+.resto-header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 13rem;
+    height: 8rem;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.nav-bar li {
+    margin-left: 2rem;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.nav-bar a:hover {
+    background-color: #EDD8D5;
+}
