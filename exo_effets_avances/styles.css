@@ -1,0 +1,74 @@
+/* === Reset / normalize minimal === */
+
+/* 1) Modèle de boîte cohérent */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 62.5% de 16px = 10px */
+html {
+    font-size: 62.5%;
+}
+
+/* 2) Supprimer les marges par défaut */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3) Rendu du texte plus lisible */
+body {
+  line-height: 1.5;
+}
+
+/* 4) Les médias ne dépassent pas leur conteneur */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5) Les champs de formulaire héritent de la police */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+.container {
+ margin: 1.6rem;
+ background-color: rgb(235, 232, 230);
+}
+
+.effect-tittle {
+    border: 1px solid blue;
+   background: linear-gradient(45deg, red, yellow);
+}
+
+.animated-button {
+    background-color: blueviolet;
+    color: aqua;
+    animation: slide 2000ms ease-out 0ms 3 normal;
+}
+
+
+
+
+
+@keyframes slide {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+
+}
