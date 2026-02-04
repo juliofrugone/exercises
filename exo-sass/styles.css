@@ -1,0 +1,94 @@
+/* === Minimal reset / normalize === */
+
+/* 1) Box model consistent */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3) Text stable */
+body {
+  line-height: 1.5;
+}
+
+/* 4) Images media sans debordement */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5) Formulaires */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+/* version desktop  1024px */
+
+@media screen and (min-width: 769px) { 
+    .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .col {
+        font-size: 1.6rem;
+        margin: 2rem;
+    }
+}
+
+
+/* version mobile */
+@media screen and (max-width: 768px) { 
+    .columns {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .col {
+        font-size: 1.6rem;
+        margin: 2rem;
+        padding: 1rem;
+    }
+}
+
+
+/* version mobile sm*/
+@media screen and (max-width: 480px) { 
+    .columns {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .col {
+        font-size: 1.6rem;
+        margin: 2rem;
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
