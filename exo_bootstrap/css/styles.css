@@ -1,0 +1,22 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%; /* base des rem */
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1.6rem; /* texte par défaut = 16px */
+}
