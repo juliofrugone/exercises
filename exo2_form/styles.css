@@ -1,0 +1,35 @@
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 2rem;
+    max-width: 20rem;
+
+}
+
+label {
+    margin-top: 1rem;
+
+}
+
+input {
+    padding: 0,6rem;
+}
+
+.button {
+    margin: auto;
+    max-width: 70%;
+    margin-top: 1.5rem;
+    border-radius: 2.2rem;
+    padding: 1rem;
+    font-weight: 500;
+}
+.commentaire {
+    
+}
+.button:hover {
+    color: aquamarine;
+}
