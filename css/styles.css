@@ -1,0 +1,29 @@
+.list-item {
+  margin-bottom: 20px;
+}
+.list-item .title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.list-item .description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.list-item .button {
+  margin-top: 10px;
+}
+
+.list-item:nth-child(1) {
+  color: #ff0000;
+}
+
+.list-item:nth-child(2) {
+  color: #00ff00;
+}
+
+.list-item:nth-child(3) {
+  color: #0000ff;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,36 @@
+
+
+$margin-bottom: 10px;
+$font-title-size: 24px;
+$font-description-size: 16px;
+$colors: (#ff0000 #00ff00 #0000ff);
+
+
+@mixin font-margin($font-size, $spc-bottom) {
+    font-size: $font-size;
+    margin-bottom: $spc-bottom;
+}
+
+.list-item {
+  margin-bottom: 20px;
+  
+  .title {
+    @include font-margin($font-title-size, $margin-bottom);
+    font-weight: bold;
+    
+  }
+  
+  .description {
+    @include font-margin($font-description-size, $margin-bottom);
+  }
+  
+  .button {
+    margin-top: 10px;
+  }
+}
+
+@for $i from 1 through length($colors) {
+  .list-item:nth-child(#{$i}) {
+    color: nth($colors, $i);
+  }
+}
